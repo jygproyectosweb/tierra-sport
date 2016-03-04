@@ -1,60 +1,60 @@
 doctype html
 html(lang="es")
-	head
-		meta(charset="UTF-8")
-		title Tierra Sport
-		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
-		link(rel="stylesheet", href="css/estilos.css")
-		link(rel="stylesheet", href="css/slider.css")
-		link(rel="stylesheet", href="css/font.css")
-		link(rel="stylesheet", href="css/form.css")
-	body
-		.formulario
-			.contenedor
-				form(action="" method="")
-					label(for="usuario") Usuario:
-					input(type="text" required name="usuario")
-					label(for="password") Contraseña:
-					input(type="password" required name="clave")
-					input(type="submit" value="Ingresar")
-		header.main-header
-			.contenedor
-				.logo
-					h1.icon-ball Tierra Sport
-				.menu-bar
-					span#btn-menu.icon-menu Menú
-				nav.menu
-					ul
-						li: a(href="") Inicio
-						li: a(href="") Productos
-						li: a(href="") Servicios
-						li: a(href="") Contacto
-		#slider
-			.contenedor
-				.jcarousel-wrapper
-					.jcarousel
-						ul
-							- for (var i=1;i<=4;i++)
-								li: img(src="img/1.jpg")
-					a.jcarousel-control-prev(href="#") &lsaquo;
-					a.jcarousel-control-next(href="#") &rsaquo;
-					p.jcarousel-pagination
-		.articulos
-			.contenedor
-				- for (var i=1;i<=5;i++)
-					article.articulo__item
-						h2.articulo__titulo Artículo #{i}
-						img(src="img/img1.jpg", alt="")
-						a.articulo__enlace.icon-mas(href="#") Ver más
-		footer.main-footer
-			.contenedor
-				.main-footer__enlaces
-					a.icon-facebook(href="#") Facebook
-					a.icon-twitter(href="#") Twiiter
-					a.icon-instagram(href="#") Instagram
-				.main-footer__copy
-					p &copy;Tierra Sport - Todos los derechos reservados
-		script(src="js/jquery-1.2.6.min.js")
-		script(src="js/jquery.jcarousel.min.js")
-		script(src="js/menu.js")
-		script(src="js/slider.js")
+  head
+    meta(charset="UTF-8")
+    title Tierra Sport
+    meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(rel="stylesheet", href="css/estilos.css")
+    link(rel="stylesheet", href="css/slider.css")
+    link(rel="stylesheet", href="css/font.css")
+    link(rel="stylesheet", href="css/form.css")
+  body
+    .formulario
+      .contenedor
+        form(action="" method="")
+          label(for="usuario") Usuario:
+          input(type="text" required name="usuario")
+          label(for="password") Contraseña:
+          input(type="password" required name="clave")
+          input(type="submit" value="Ingresar")
+    header.main-header
+      .contenedor
+        .logo
+          h1.icon-ball Tierra Sport
+        .menu-bar
+          span#btn-menu.icon-menu Menú
+        nav.menu
+          ul
+            li: a(href="") Inicio
+            li: a(href="") Productos
+            li: a(href="") Servicios
+            li: a(href="") Contacto
+    #slider
+      .contenedor
+        .jcarousel-wrapper
+          .jcarousel
+            ul
+            - for (var i=1;i<=4;i++)
+              li: img(src="img/1.jpg")
+          a.jcarousel-control-prev(href="#") &lsaquo;
+          a.jcarousel-control-next(href="#") &rsaquo;
+          p.jcarousel-pagination
+    .articulos
+      .contenedor
+        - for (var i=1;i<=5;i++)
+          article.articulo__item
+            h2.articulo__titulo Artículo #{i}
+            img(src="img/img1.jpg", alt="")
+            a.articulo__enlace.icon-mas(href="#") Ver más
+    footer.main-footer
+      .contenedor
+        .main-footer__enlaces
+          a.icon-facebook(href="#") Facebook
+          a.icon-twitter(href="#") Twiiter
+          a.icon-instagram(href="#") Instagram
+        .main-footer__copy
+          p &copy;Tierra Sport - Todos los derechos reservados
+    script(src="js/jquery-1.2.6.min.js")
+    script(src="js/jquery.jcarousel.min.js")
+    script(src="js/menu.js")
+    script(src="js/slider.js")
