@@ -1,0 +1,38 @@
+/*Estilos de formulario*/
+.formulario {
+  padding: 10px;
+  border-bottom: 1px solid #777;
+}
+
+.formulario label {
+  display: block;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 3px 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.formulario input[type="submit"] {
+  margin-bottom: 0px;
+}
+
+@media (min-width: 630px) {
+  .formulario {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .formulario label {
+    display: inline;
+  }
+  .formulario input {
+    width: 150px;
+    padding: 3px;
+    margin: 0 7px;
+  }
+  .formulario input[type="submit"] {
+    width: auto;
+  }
+}

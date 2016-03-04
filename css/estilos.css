@@ -1,0 +1,141 @@
+@import url(menu.css);
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #111;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.contenedor {
+  width: 100%;
+  margin: auto;
+}
+
+h1 {
+  margin: 5px 0;
+}
+
+.articulos .contenedor {
+  text-align: center;
+}
+
+.articulo__titulo {
+  font-size: 20px;
+}
+
+.articulo__enlace {
+  margin: auto;
+  margin-top: 5px;
+  display: block;
+  width: 110px;
+  color: #fff;
+  text-decoration: none;
+  background: #222;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.articulo__enlace:hover {
+	background: #333;
+}
+
+.main-footer {
+  padding: 20px;
+  border-top: 1px solid #777;
+  margin-top: 30px;
+}
+
+.main-footer__enlaces {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-footer__copy {
+  text-align: center;
+}
+
+.main-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-footer [class*="icon-"]:before {
+  font-size: 24px;
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
+}
+
+@media (min-width: 480px) {
+  .articulo__item {
+    width: 48%;
+  }
+  .articulos .contenedor {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .articulos .contenedor {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+  }
+  .articulo__item {
+    width: 30%;
+    margin: 0 2px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedor {
+    width: 1000px;
+  }
+  .articulo__item {
+    width: 19%;
+  }
+  .articulos .contenedor {
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main-footer .contenedor {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__footer__enlaces {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contenedor {
+    width: 1200px;
+  }
+}
